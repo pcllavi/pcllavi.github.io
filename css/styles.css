@@ -25,7 +25,6 @@ header {
 .menu-icon {
     display: flex;
     justify-content: flex-end;
-    align-items: top;
     margin-right: 2%;
     margin-top: 3%;
 }
@@ -468,7 +467,7 @@ footer {
 
     .intro-container h1 {
         font-size: 12vh;
-        text-align: justified;
+        text-align: justify;
     }
 
     .intro-container p {

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            menuIcon.addEventListener('click', function () {
+                window.location.href = 'nav.html';
+            });
+        };
+
+    </script>
+    <title>contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="css/img/kiwi.jpg" alt="website logo">
+            </a>
+        </div>
+        <nav class="desktop-nav">
+            <a href="work.html">work</a>
+            <a href="about.html">about</a>
+            <a href="css/pdf/Resume - Pallavi Chandanala.pdf" target="_blank" >resume</a>
+            <a href="contact.html">contact</a>
+        </nav>
+        <div class="menu-icon">
+            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#362117">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                    stroke-width="0.192"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <title>Menu</title>
+                    <g id="Page-1" stroke-width="1.968" fill="none" fill-rule="evenodd">
+                        <g id="Menu">
+                            <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"> </rect>
+                            <line x1="5" y1="7" x2="19" y2="7" id="Path" stroke="#362117" stroke-width="1.968"
+                                stroke-linecap="round"> </line>
+                            <line x1="5" y1="17" x2="19" y2="17" id="Path" stroke="#362117" stroke-width="1.968"
+                                stroke-linecap="round"> </line>
+                            <line x1="5" y1="12" x2="19" y2="12" id="Path" stroke="#362117" stroke-width="1.968"
+                                stroke-linecap="round"> </line>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </header>
+
+    <form id="contact-form" action ="/" method="get">
+        <fieldset>
+            <h1 class="contact-page-title">say hi!</h1>
+            <label for="name">name</label>
+            <input type="text" id="name" name="user_name" placeholder="first" value="" required>
+            <input type="text" id="name" name="user_name" placeholder="last" value="" required>
+            <label for="email">email</label>
+            <input type="email" id="email" name="user_email" placeholder="email@domain.com" value="" required>
+            <label for="message">message</label>
+            <textarea type="message" id="message" name="user_message" placeholder="start typing here..." value="" required></textarea>
+            <button type="submit" class="submit-button">submit</button>
+        </fieldset>
+    </form>
+    <div id="popup-container" class="popup-container">
+        <div class="popup">
+                <button id="close-button" class="close-button">
+                    <svg width="64px" height="56px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g id="Menu / Close_MD">
+                                <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#362117"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            
+            <div class="popup-img">
+                <img src="css/img/sm-md-sent.png" class="popup-sm-md-img" alt="popup sent icon for small and medium devices">
+                <img src="css/img/large-sent.png" class="popup-lg-img" alt="popup sent icon for large devices">
+            </div>
+            <div class="popup-text">
+                <h2>your message did not actually submit!</h2>
+                <p>this part of the website is still under construction, but it models how it would work. this pop-up would
+                    usually tell users that their message was sent.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const submitButton = document.getElementById('submit-button');
+        const popupContainer = document.getElementById('popup-container');
+        const closeButton = document.getElementById('close-button');
+    
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            popupContainer.style.display = 'block'; 
+        });
+    
+        closeButton.addEventListener('click', function() {
+            popupContainer.style.display = 'none'; 
+        });
+    </script>
+
+    <footer>
+        <p>© 2023</p>
+    </footer>
+</body>

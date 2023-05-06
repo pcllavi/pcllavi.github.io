@@ -1,0 +1,755 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #F1EAE4;
+    color: #362117;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12%;
+}
+
+.logo-container img {
+    width: 50%;
+    height: auto;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+    margin-right: 2%;
+    margin-top: 3%;
+}
+
+
+/* The next six sections are for mobile/tablet viewports, where the hamburger menu opens a navigation page that sort of looks like a pop up. The regular desktop navigation is in the large viewport media query.*/
+
+.nav-container {
+    position: fixed;
+    bottom: 2%;
+    left: 4.5%;
+    margin: 2%;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 4vh;
+    font-weight: 700;
+    color: #362117;
+    border-radius: 30px;
+    padding: 2% 10% 2% 10%;
+    margin: 25% 25% 25% 0;
+}
+
+.nav-links a:hover {
+    background-color: #362117;
+    color: #F1EAE4;
+    border-radius: 30px;
+    transition: all 170ms ease;
+}
+
+.nav-links a:focus {
+    background-color: #B3D598;
+    color: #362117;
+    border-radius: 30px;
+    transition: all 170ms ease;
+}
+
+.nav-close button {
+    position: fixed;
+    top: 2%;
+    right: 1.5%;
+    background-color: transparent;
+    border: none;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.intro-container {
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+}
+
+.intro-container h1 {
+    font-size: 9vh;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.intro-container p {
+    font-size: 2.5vh;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+
+/* The next five sections are for my "Work" page. */
+
+.work-title h1 {
+    font-size: 10vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1vw;
+    padding: 2% 1.5% 1.5% 1.5%;
+    margin: 1.5% 1.5% 1.5% 1.5%;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    height: 100%;
+    margin-bottom: 2vh;
+}
+
+.work-item img {
+    width: 100%;
+    height: 20vh;
+    min-height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.work-item h2 {
+    font-size: 3vh;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 1%;
+}
+
+
+/* The next eight sections are for the four individual projects that are linked on my "Work" page. The last three overlap with my "Contact" page because of button styles. */
+
+.project-container {
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3% 0% 3%;
+}
+
+.project-info {
+    text-align: center;
+    width: auto;
+    max-width: 638px;
+}
+
+.project-info h1 {
+    font-size: 6.5vh;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    margin: 0 0 3% 0;
+}
+
+.project-info p {
+    margin: 0% 0 3% 0;
+    text-align: left;
+}
+
+.project-image {
+    max-width: 100%;
+}
+
+            /* The following button styles were also used on the 'submit' button on contact.html */
+
+.button,
+.submit-button {
+    padding: 2%;
+    border: solid 3px #362117;
+    border-radius: 30px;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 600;
+    color: #362117;
+    width: auto;
+    min-width: 50%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    transition: all 170ms ease;
+}
+
+.button:hover,
+.submit-button:hover {
+    border: solid 3px #362117;
+    background-color: #B3D598;
+    color: #362117;
+    transition: all 170ms ease;
+}
+
+.button:focus,
+.submit-button:focus {
+    background-color: #362117;
+    color: #F1EAE4;
+    border: solid 3px transparent;
+    transition: all 170ms ease;
+
+}
+
+
+/* The next ten sections are for my "About" page. The buttons are sightly different because of available space, but have the same general styling. */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 30px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-image img {
+    border-radius: 30px;
+    width: 85vw;
+    height: auto;
+    object-fit: cover;
+    margin-top: 8%;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    font-size: 10vh;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    margin: 0 0 5% 0%;
+}
+
+.about-text {
+    font-size: 1.8vh;
+    text-align: left;
+    margin: 0 5% 0 5%;
+}
+
+.about-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.about-buttons .button {
+    width: 85%;
+    padding: 30px 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #362117;
+    border: solid 3px #362117;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 4vh;
+    margin: 2%;
+    transition: background-color 170ms ease-in-out;
+}
+
+.about-buttons .button:hover {
+    background-color: #B3D598;
+    color: #362117;
+    transition: all 170ms ease;
+}
+
+.about-buttons .button:focus {
+    background-color: #362117;
+    color: #F1EAE7;
+    transition: all 170ms ease;
+}
+
+
+/* The rest of these are for my "Contact" page, other than the footer and the media queries. */
+
+.contact-page-title {
+    font-size: 10vh;
+    font-weight: 700;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    margin: 0 0 2.5% 0;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    height: 85%;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: none;
+    margin-right: 0;
+}
+
+form input {
+    min-height: 35px;
+    background-color: white;
+    border-radius: 30px;
+    border: solid 2px transparent;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+form textarea {
+    border-radius: 30px;
+    border: 2px solid transparent;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+form #name {
+    margin-bottom: 15px;
+}
+
+form #email {
+    margin-bottom: 15px;
+}
+
+form #message {
+    margin-bottom: 4%;
+    min-height: 10%;
+}
+
+form label {
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    font-size: 2vh;
+    font-weight: 600;
+    margin-left: 1.5%;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 1.8vh;
+    color: #9B908B;
+    font-weight: 500;
+    align-self: self-start;
+}
+
+input:hover,
+textarea:hover {
+    border-color: #B3D598;
+    transition: all 170ms ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #362117;
+    border-width: 2px;
+    transition: all 170ms ease;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F1EAE4;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.popup-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-sm-md-img {
+    width: 150px;
+    height: auto;
+}
+
+.popup-lg-img {
+    display: none;
+}
+
+.popup-text {
+    max-width: 70%;
+    align-self: center;
+    text-align: center;
+}
+
+.popup h2 {
+    margin-bottom: 1%;
+}
+
+.popup p {
+    font-size: 1.8vh;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 2.5%;
+    right: 1%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 2vh;
+    font-weight: 400;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+
+
+
+@media (min-width: 768px) {
+
+
+
+    .intro-container {
+        align-items: center;
+    }
+
+    .intro-container h1 {
+        font-size: 12vh;
+        text-align: justified;
+    }
+
+    .intro-container p {
+        text-align: left;
+        min-width: 10%;
+        margin-left: 1%;
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work-item {
+        margin-bottom: 1vh;
+    }
+
+    .work-item img {
+        min-height: 350px;
+    }
+
+    .about-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        height: 100vh;
+    }
+
+    .about-image img {
+        max-width: 90%;
+        max-height: 95%;
+        border-radius: 30px;
+        margin-left: 6%;
+        margin-top: 3%;
+        object-fit: cover;
+    }
+
+    .about-content {
+        margin: 1%;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .about-title {
+        font-size: 8vh;
+        font-family: 'Lexend', sans-serif;
+        text-align: left;
+        margin: 0;
+    }
+
+    .about-text {
+        margin-left: 0;
+    }
+
+
+    .about-buttons .button {
+        margin: 2%;
+        padding: 15px 20px;
+    }
+
+    .about-buttons .button {
+        margin: 2%;
+        padding: 15px 20px;
+    }
+
+    form fieldset {
+        width: 70%;
+    }
+
+    footer {
+        grid-column: 1/3;
+    }
+
+}
+
+
+
+
+@media (min-width: 1100px) {
+
+
+
+    .menu-icon {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .desktop-nav a {
+        text-decoration: none;
+        font-size: 2.5vh;
+        font-weight: 600;
+        padding: 1% 2% 1% 2%;
+        color: #362117;
+        margin-right: 30px;
+        border: solid 1px transparent;
+        border-radius: 30px;
+    }
+
+    .desktop-nav a:hover {
+        padding: 1% 2% 1% 2%;
+        background-color: #362117;
+        color: #F1EAE7;
+        border-radius: 30px;
+        border: solid 1px transparent;
+        transition: all 170ms ease;
+    }
+
+    .desktop-nav a:focus {
+        background-color: #B3D598;
+        color: #362117;
+        border-radius: 30px;
+        transition: all 170ms ease;
+    }
+
+    .intro-container {
+        align-items: center;
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+
+    .work-item {
+        margin-bottom: 0.1vh;
+    }
+
+    .work-item img {
+        min-height: 250px;
+    }
+
+    .project-container {
+        display: grid;
+        grid-template-columns: 38% 62%;
+        grid-template-rows: 60% 40%;
+        margin-right: 0;
+        margin-left: 4%;
+        position: relative;
+        height: 83vh;
+    }
+
+    .project-info {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: auto;
+        justify-self: center;
+        align-self: self-end;
+        position: relative;
+        z-index: 2;
+    }
+
+    .project-info h1 {
+        font-size: 4.5rem;
+    }
+
+    .project-info p {
+        max-width: 800px;
+        justify-self: center;
+        margin-right: 0;
+    }
+
+    .project-image {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        justify-self: flex-end;
+        max-width: 100%;
+    }
+
+    .about-image img {
+        max-width: 90%;
+        max-height: 95%;
+        border-radius: 30px;
+        margin-left: 6%;
+        margin-top: 3%;
+        object-fit: cover;
+    }
+
+    .about-content {
+        margin: 1%;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-title {
+        font-size: 9vh;
+    }
+
+    .button {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-self: center;
+        align-self: flex-start;
+    }
+
+    form fieldset {
+        width: 60%;
+    }
+
+    .popup {
+        width: 61%;
+        height: 82%;
+        background-color: #FEFAF7;
+        border-radius: 30px;
+    }
+
+    .popup-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-sm-md-img {
+        display: none;
+    }
+
+    .popup-lg-img {
+        display: flex;
+        margin-right: 0;
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+
+
+@media (min-height: 920px) {
+
+
+
+
+    .logo-container {
+        width: 10%;
+        height: auto;
+    }
+
+    .project-container {
+        grid-template-columns: 48% 52%;
+        grid-template-rows: 60% 40%;
+    }
+
+    .project-info {
+        max-width: 100%;
+    }
+
+    .project-info h1 {
+        font-size: 10vh;
+    }
+
+    .project-info p {
+        font-size: 2vh;
+        max-width: 100%;
+    }
+
+    .project-image {
+        transform: scale(2);
+        justify-self: center;
+    }
+
+    .contact-page-title {
+        font-size: 12vh;
+    }
+
+    form {
+        height: 100%;
+    }
+
+    form fieldset {
+        align-self: center;
+        height: 100%;
+    }
+
+    form input {
+        height: auto;
+        padding: 1%;
+    }
+}

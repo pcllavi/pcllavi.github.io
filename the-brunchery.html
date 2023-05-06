@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            menuIcon.addEventListener('click', function () {
+                window.location.href = 'nav.html';
+            });
+        };
+
+    </script>
+    <title>the brunchery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="css/img/kiwi.jpg" alt="website logo">
+            </a>
+        </div>
+        <nav class="desktop-nav">
+            <a href="work.html">work</a>
+            <a href="about.html">about</a>
+            <a href="css/pdf/Resume - Pallavi Chandanala.pdf" target="_blank" >resume</a>
+            <a href="contact.html">contact</a>
+        </nav>
+        <div class="menu-icon">
+            <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#362117">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                    stroke-width="0.192"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <title>Menu</title>
+                    <g id="Page-1" stroke-width="1.968" fill="none" fill-rule="evenodd">
+                        <g id="Menu">
+                            <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"> </rect>
+                            <line x1="5" y1="7" x2="19" y2="7" id="Path" stroke="#362117" stroke-width="1.968"
+                                stroke-linecap="round"> </line>
+                            <line x1="5" y1="17" x2="19" y2="17" id="Path" stroke="#362117" stroke-width="1.968"
+                                stroke-linecap="round"> </line>
+                            <line x1="5" y1="12" x2="19" y2="12" id="Path" stroke="#362117" stroke-width="1.968"
+                                stroke-linecap="round"> </line>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </header>
+    <div class="project-container">
+        <div class="project-info">
+            <h1>
+                the brunchery
+            </h1>
+            <p>
+                the brunchery is a mobile application that was modeled based on a mock client, who had strict branding guidelines for their restaurant’s menu app.            </p>
+        </div>
+
+        <img class="project-image" src="css/img/the-brunchery.png" alt="the brunchery app prototype">
+
+        <a href="https://www.figma.com/proto/SfkTORrTZ1halELYsY3DWB/Pallavi-Chandanala?page-id=0%3A1&node-id=1-267&viewport=479%2C407%2C0.36&scaling=scale-down&starting-point-node-id=1%3A267"
+            target="_blank" class="button">the design</a>
+    </div>
+
+    <footer>
+        <p>© 2023</p>
+    </footer>

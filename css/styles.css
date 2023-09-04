@@ -1,5 +1,6 @@
 body,
 html {
+    scroll-behavior: smooth;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -588,7 +589,9 @@ footer {
     }
 
     .intro-container {
-        align-items: center;
+        align-items:flex-start;
+        justify-content: flex-start;
+        margin-top: 5%;
     }
 
     .work-grid {

@@ -1,0 +1,213 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color:black;
+}
+
+nav {
+    background-color: #009456;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.plastic-bag-text {
+    flex: 1;
+    padding-left: 6%;
+    padding-top: 7%;
+    color:#009456;
+    text-align: left;
+    max-width: 50%;
+}
+
+.to-go-text {
+    flex: 1;
+    padding-left: 6%;
+    padding-top: 11%;
+    color:#009456;
+    text-align: left;
+    max-width: 50%;
+}
+
+.mixed-text {
+    flex: 1;
+    padding-left: 6%;
+    padding-top: 10%;
+    color:#009456;
+    text-align: left;
+    max-width: 50%;
+}
+
+.contaminated-text {
+    flex: 1;
+    padding-left: 6%;
+    padding-top: 10%;
+    color:#009456;
+    text-align: left;
+    max-width: 50%;
+}
+
+.glass-text {
+    flex: 1;
+    padding-left: 6%;
+    padding-top: 10%;
+    color:#009456;
+    text-align: left;
+    max-width: 50%;
+}
+
+.bagged-text {
+    flex: 1;
+    padding-left: 6%;
+    padding-top: 12%;
+    color:#009456;
+    text-align: left;
+    max-width: 50%;
+}
+
+.rec-rate-text {
+    padding-left: 6%;
+    padding-top: 10%;
+    color:#009456;
+    text-align: left;
+    max-width: 40%;
+}
+
+.cans-text {
+    position: relative;
+    width: 100%;
+    padding-left: 6%;
+    padding-top: 2%;
+    text-align: left;
+    z-index: 1;
+}
+
+#cans-big-h1 {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+#cans-big-h1 {
+    color: #009456;
+    font-size: 180px;
+    margin: 0;
+}
+
+h1{
+    font-size: 80px;
+}
+
+p{
+    font-size: 20px;
+}
+.bag-image img {
+    flex: 1;
+    margin-left: 12%;
+    max-width: 50%;
+    padding-top: 10%;
+    padding-left: 22%;
+    height: auto;
+    display: block;
+}
+
+.to-go-image img {
+    flex: 1;
+    max-width: 100%;
+    padding-top: 47%;
+    padding-left: 40%;
+    height: auto;
+    display: block;
+}
+
+.mixed-image img {
+    flex: 1;
+    max-width: 50%;
+    padding-top: 28%;
+    padding-left: 32%;
+    height: auto;
+    display: block;
+}
+
+.contaminated-image img {
+    flex: 1;
+    max-width: 50%;
+    padding-top: 30%;
+    padding-left: 32%;
+    height: auto;
+    display: block;
+}
+
+.glass-image img {
+    flex: 1;
+    max-width: 50%;
+    padding-top: 22%;
+    padding-left: 30%;
+    height: auto;
+    display: block;
+}
+
+.bagged-image img {
+    flex: 1;
+    max-width: 50%;
+    padding-top: 18%;
+    padding-left: 32%;
+    height: auto;
+    display: block;
+}
+
+.rec-rate-image img {
+    flex: 1;
+    max-width: 50%;
+    padding-top: 18%;
+    padding-left: 38%;
+    height: auto;
+    display: block;
+}
+
+.cans-image {
+    position: absolute;
+    top: 16%;
+    left: 60%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.cans-image img {
+    width: 38%;
+    height: auto;
+    display: block;
+}
+
+#explanation-container {
+    background-color: #009456; /* Green color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 3%; /* Optional: Add padding for better visual appearance */
+    box-sizing: border-box; /* Include padding in the total width/height */
+    position: absolute;
+    top: 32%; /* Adjust as needed */
+    left: 25%; /* Adjust as needed */
+    width: 50%; /* Adjust as needed */
+}
+
+#explanation {
+    margin: 0; /* Remove default margin for the paragraph */
+    color: white;
+    font-size: 32px;
+}
